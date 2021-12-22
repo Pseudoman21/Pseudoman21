@@ -1,4 +1,4 @@
-### Hi there 👋
+![snake gif](https://github.com/pseudoman21/pseudoman21/blob/output/github-contribution-grid-snake.gif)
 
 <!--
 **Pseudoman21/Pseudoman21** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
