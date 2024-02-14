@@ -1,5 +1,5 @@
 
-**Pseudoman21/Pseudoman21** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Pseudoman21 - JP, Jeypz, John Paul**
 
 - 🔭 I’m currently working on MEDDICC MOS
 - 🌱 I’m currently learning LiveBlocks
