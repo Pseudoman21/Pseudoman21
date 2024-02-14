@@ -1,3 +1,4 @@
+![snake gif](https://github.com/pseudoman21/pseudoman21/blob/output/github-contribution-grid-snake.svg)
 
 **Pseudoman21 - JP, Jeypz, John Paul**
 
