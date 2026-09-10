@@ -1,11 +1,16 @@
-# GitHub Action for generating a contribution graph with a snake eating your contributions.
+# GitHub Action for generating this profile's dynamic README assets:
 #
-# The animation is built from snk's own building blocks (see
-# https://github.com/Platane/snk) instead of its packaged action, so that
-# .github/scripts/generate-snake.ts can pad sparse/empty days with invented
-# contributions before the snake's route is computed. Days you actually
-# contributed on are never touched -- this only affects how lively the
-# animation looks, not your real GitHub contribution graph.
+# 1. The contribution graph with a snake eating (and growing on) your
+#    contributions. Built from snk's own building blocks (see
+#    https://github.com/Platane/snk) instead of its packaged action, so
+#    .github/scripts/generate-snake.ts can pad sparse/empty days with
+#    invented contributions before the snake's route is computed, and can
+#    make the snake grow as it eats. Days you actually contributed on are
+#    never touched -- this only affects how lively the animation looks,
+#    not your real GitHub contribution graph.
+#
+# 2. A custom "engineering activity" card (commits/PRs/issues), styled as
+#    a CI checks list -- see .github/scripts/generate-activity-card.ts.
 
 name: Generate Snake
 
@@ -62,6 +67,15 @@ jobs:
         run: |
           cp ../.github/scripts/generate-snake.ts .
           bun generate-snake.ts
+
+    # Generates the engineering-activity card. Non-fatal if the third-party
+    # stats source is temporarily down -- the snake shouldn't be blocked by it.
+      - name: Generate engineering activity card
+        continue-on-error: true
+        env:
+          SNK_USERNAME: pseudoman21
+          CARD_OUT_SVG: dist/engineering-activity.svg
+        run: bun .github/scripts/generate-activity-card.ts
 
      # show the status of the build. Makes it easier for debugging (if there's any issues).
       - run: git status
