@@ -1,4 +1,11 @@
 # GitHub Action for generating a contribution graph with a snake eating your contributions.
+#
+# The animation is built from snk's own building blocks (see
+# https://github.com/Platane/snk) instead of its packaged action, so that
+# .github/scripts/generate-snake.ts can pad sparse/empty days with invented
+# contributions before the snake's route is computed. Days you actually
+# contributed on are never touched -- this only affects how lively the
+# animation looks, not your real GitHub contribution graph.
 
 name: Generate Snake
 
@@ -11,6 +18,11 @@ on:
 
 # This command allows us to run the Action automatically from the Actions tab.
   workflow_dispatch:
+    inputs:
+      fill_probability:
+        description: "Chance (0-1) of inventing a contribution on an empty day"
+        required: false
+        default: "0.4"
 
 # The sequence of runs in this workflow:
 jobs:
@@ -23,16 +35,33 @@ jobs:
     steps:
 
     # Checks repo under $GITHUB_WORKSHOP, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-    # Generates the snake  
-      - uses: Platane/snk@master
-        id: snake-gif
+    # Check out snk itself, pinned to a known-good release, so we can call
+    # its solver + svg-creator packages directly.
+      - uses: actions/checkout@v4
         with:
-          github_user_name: pseudoman21
-          # these next 2 lines generate the files on a branch called "output". This keeps the main branch from cluttering up.
-          gif_out_path: dist/github-contribution-grid-snake.gif
-          svg_out_path: dist/github-contribution-grid-snake.svg
+          repository: Platane/snk
+          ref: v3.5.0
+          path: snk-src
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Install snk dependencies
+        working-directory: snk-src
+        run: bun install
+
+    # Generates the snake, padding empty days with invented contributions
+      - name: Generate snake SVG
+        working-directory: snk-src
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SNK_USERNAME: pseudoman21
+          SNAKE_OUT_SVG: ../dist/github-contribution-grid-snake.svg
+          SNAKE_FILL_PROBABILITY: ${{ github.event.inputs.fill_probability || '0.4' }}
+        run: |
+          cp ../.github/scripts/generate-snake.ts .
+          bun generate-snake.ts
 
      # show the status of the build. Makes it easier for debugging (if there's any issues).
       - run: git status
