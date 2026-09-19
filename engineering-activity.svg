@@ -1,0 +1,44 @@
+<svg width="480" height="299" viewBox="0 0 480 299" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="pseudoman21 engineering activity">
+<desc>Total Commits: 538, PRs Opened: 24, PRs Merged: 19, Merge Rate: 79.17%, Reviews Given: 0, PRs Reviewed: 13, Issues Opened: 1</desc>
+<style>
+  .cursor { animation: blink 1.1s steps(1) infinite; }
+  @keyframes blink { 0%, 49% { opacity: 1 } 50%, 100% { opacity: 0 } }
+</style>
+<rect x="0.5" y="0.5" width="479" height="298" rx="14" fill="#171A24" stroke="#262B3A"/>
+<circle cx="28" cy="30" r="4" fill="#35D399"/>
+<text x="40" y="34" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" font-weight="600" fill="#EDEBE6">pseudoman21/engineering-activity</text>
+<rect class="cursor" x="293.6" y="23" width="7" height="14" fill="#35D399"/>
+<rect x="402" y="20" width="54" height="20" rx="10" fill="#35D399" fill-opacity="0.14" stroke="#35D399" stroke-opacity="0.4"/>
+<text x="429" y="34" text-anchor="middle" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="10" font-weight="700" letter-spacing="1" fill="#35D399">PASS</text>
+<line x1="24" y1="54" x2="456" y2="54" stroke="#262B3A" stroke-width="1"/>
+
+    <text x="24" y="84" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#35D399">✓</text>
+    <text x="46" y="84" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#EDEBE6">commits</text>
+    <line x1="108.6" y1="80" x2="422.6" y2="80" stroke="#262B3A" stroke-width="1" stroke-dasharray="1,4"/>
+    <text x="456" y="84" text-anchor="end" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#EDEBE6">538</text>
+    <text x="24" y="111" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#35D399">✓</text>
+    <text x="46" y="111" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#EDEBE6">prs opened</text>
+    <line x1="132.0" y1="107" x2="430.4" y2="107" stroke="#262B3A" stroke-width="1" stroke-dasharray="1,4"/>
+    <text x="456" y="111" text-anchor="end" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#EDEBE6">24</text>
+    <text x="24" y="138" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#35D399">✓</text>
+    <text x="46" y="138" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#EDEBE6">prs merged</text>
+    <line x1="132.0" y1="134" x2="430.4" y2="134" stroke="#262B3A" stroke-width="1" stroke-dasharray="1,4"/>
+    <text x="456" y="138" text-anchor="end" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#EDEBE6">19</text>
+    <text x="24" y="165" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#767C8C">–</text>
+    <text x="46" y="165" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#767C8C">reviews given</text>
+    <line x1="155.4" y1="161" x2="438.2" y2="161" stroke="#262B3A" stroke-width="1" stroke-dasharray="1,4"/>
+    <text x="456" y="165" text-anchor="end" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#767C8C">0</text>
+    <text x="24" y="192" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#35D399">✓</text>
+    <text x="46" y="192" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#EDEBE6">prs reviewed</text>
+    <line x1="147.6" y1="188" x2="430.4" y2="188" stroke="#262B3A" stroke-width="1" stroke-dasharray="1,4"/>
+    <text x="456" y="192" text-anchor="end" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#EDEBE6">13</text>
+    <text x="24" y="219" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#35D399">✓</text>
+    <text x="46" y="219" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" fill="#EDEBE6">issues opened</text>
+    <line x1="155.4" y1="215" x2="438.2" y2="215" stroke="#262B3A" stroke-width="1" stroke-dasharray="1,4"/>
+    <text x="456" y="219" text-anchor="end" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#EDEBE6">1</text>
+<line x1="24" y1="235" x2="456" y2="235" stroke="#262B3A" stroke-width="1"/>
+<text x="24" y="259" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="11" fill="#767C8C">merge rate</text>
+<text x="456" y="259" text-anchor="end" font-family="ui-monospace,'SF Mono','Cascadia Code','Roboto Mono',Menlo,Consolas,monospace" font-size="13" font-weight="700" fill="#35D399">79%</text>
+<rect x="24" y="269" width="378" height="6" rx="3" fill="#262B3A"/>
+<rect x="24" y="269" width="299.3" height="6" rx="3" fill="#35D399"/>
+</svg>
